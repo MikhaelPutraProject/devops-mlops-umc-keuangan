@@ -1,0 +1,15 @@
+# File konfigurasi lokal dan environment
+.env
+src/config/config.local.php
+
+# Folder dependency dan build
+/vendor/
+/node_modules/
+
+# File sistem operasi dan IDE
+.DS_Store
+ThumbsUp.db
+.vscode/
+.idea/
+*.swp
+*.log
