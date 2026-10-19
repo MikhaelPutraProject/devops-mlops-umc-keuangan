@@ -22,8 +22,8 @@ Aplikasi berbasis web dengan keamanan ketat dan antarmuka modern (*Dark Glassmor
 | No | Nama Lengkap | NIM | Akun GitHub | Peran Awal |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Mikhael Putra Wijaya | 23.01.53.0001 | [github.com/MikhaelPutraProject](https://github.com/MikhaelPutraProject) | Repository Owner |
-| 2 | Imam Pandu Samputa | 23.01.53.0025 | [github.com/imam-pandu](https://github.com/imampandu) | Collaborator |
-| 3 | Putri Della Jasiska | 23.01.53.0011 | [github.com/putri-della](https://github.com/putri--della) | Collaborator |
+| 2 | Imam Pandu Samputa | 23.01.53.0025 | [github.com/imampandu](https://github.com/imampandu) | Collaborator |
+| 3 | Putri Della Jasiska | 23.01.53.0011 | [github.com/putridellajasiska07](https://github.com/putridellajasiska07) | Collaborator |
 
 ## Tujuan Project
 Menyelesaikan permasalahan pencatatan keuangan UKM UMC yang sebelumnya masih dilakukan secara manual atau tersebar di berbagai spreadsheet, sehingga:
