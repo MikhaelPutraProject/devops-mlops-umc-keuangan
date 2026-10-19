@@ -4,8 +4,8 @@
 
 $db_host = 'localhost';
 $db_name = 'db_umc_keuangan';
-$db_user = 'root';
-$db_pass = ''; // Sesuaikan dengan password database lokal Anda
+$db_user = '@ycylserver!'; 
+$db_pass = '@ServerYcYlKeY!';
 
 $dsn = "mysql:host=$db_host;dbname=$db_name;charset=utf8mb4";
 $options = [

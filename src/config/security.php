@@ -14,7 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
 header("X-Frame-Options: DENY");
 header("X-Content-Type-Options: nosniff");
 header("Referrer-Policy: same-origin");
-header("Content-Security-Policy: default-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;");
+header("Content-Security-Policy: default-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com;");
 
 // Generate CSRF Token
 function generate_csrf_token(): string {
@@ -33,8 +33,8 @@ function verify_csrf_token(?string $token): bool {
 }
 
 // Sanitasi Output (Anti-XSS)
-function e(?string $string): string {
-    return htmlspecialchars($string ?? '', ENT_QUOTES, 'UTF-8');
+function e($string): string {
+    return htmlspecialchars((string)($string ?? ''), ENT_QUOTES, 'UTF-8');
 }
 
 // Cek Autentikasi Login & Session Timeout (30 Menit)
@@ -54,7 +54,7 @@ function require_login(): void {
     }
 }
 
-// Cek Otorisasi Role (RBAC: 'bendahara' atau 'ketua')
+// Cek Otorisasi Role
 function require_role(array $allowed_roles): void {
     require_login();
     if (!in_array($_SESSION['role'], $allowed_roles, true)) {
